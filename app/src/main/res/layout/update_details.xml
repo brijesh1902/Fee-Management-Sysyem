@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Update Fee Details"
+        android:textColor="@color/secondprimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Current Year:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView01" />
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:padding="16dp"
+        app:borderColor="#5300e8"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+        <EditText
+            android:id="@+id/st_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year(FY)"
+            android:inputType="textCapCharacters" />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Fee Details:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y" />
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/tf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:padding="16dp"
+        app:borderColor="#5300e8"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView02">
+
+        <EditText
+            android:id="@+id/st_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Fee (in Rupees)"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/fp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:padding="16dp"
+        app:borderColor="#5300e8"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf">
+
+        <EditText
+            android:id="@+id/st_fp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fee Paid (in Rupees)"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/fpd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:padding="16dp"
+        app:borderColor="#5300e8"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fp">
+
+        <EditText
+            android:id="@+id/st_fpdate1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fee Paid Date (DD/MM/YYYY)"
+            android:inputType="date" />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:id="@+id/fr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:padding="16dp"
+        app:borderColor="#5300e8"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fpd">
+
+        <EditText
+            android:id="@+id/st_frem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Remaining fee (if fee paid, enter 00)"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    <ImageView
+        android:id="@+id/cal2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fpd"
+        app:layout_constraintEnd_toEndOf="@+id/fpd"
+        app:layout_constraintTop_toTopOf="@+id/fpd"
+        app:srcCompat="@drawable/calendar" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:text="update"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

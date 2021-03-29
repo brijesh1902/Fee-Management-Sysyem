@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    tools:context=".Login.SignupActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        >
+
+        <TextView
+            android:id="@+id/tvRegistration"
+            style="@style/CardView.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Staff Registration"
+            android:textAllCaps="true"
+            android:textColor="#5300e8"
+            android:textSize="25dp"
+            android:textStyle="italic|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/aTILFirstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRegistration">
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/aTILLastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aTILFirstName">
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/aTILEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aTILLastName">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/ph"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aTILEmail">
+
+            <EditText
+                android:id="@+id/et_stph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:maxLength="10"
+                android:inputType="phone" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/aTILPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ph">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <Button
+            android:id="@+id/btRegister"
+            android:background="@drawable/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aTILPassword" />
+
+        <TextView
+            android:id="@+id/tvAlreadyRegistered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Already Registered? Click here to Login"
+            android:textColor="#0000FF"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btRegister" />
+
+        <ImageView
+            android:id="@+id/show3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="showpass3"
+            app:layout_constraintBottom_toBottomOf="@+id/aTILPassword"
+            app:layout_constraintEnd_toEndOf="@+id/aTILPassword"
+            app:layout_constraintTop_toTopOf="@+id/aTILPassword"
+            app:layout_constraintVertical_bias="0.49"
+            android:background="@drawable/showpass" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

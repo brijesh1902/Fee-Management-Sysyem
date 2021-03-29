@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="1dp"
+    tools:context=".Staff.Add_Students">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvRegistration"
+            style="@style/CardView.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Student Details"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            android:textStyle="italic|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/aTILPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRegistration">
+
+            <EditText
+                android:id="@+id/st_uid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Unique/GR No."
+                android:maxLength="5"
+                android:inputType="text" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/aTILFirstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aTILPassword">
+
+            <EditText
+                android:id="@+id/st_1name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/aTILLastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aTILFirstName">
+
+            <EditText
+                android:id="@+id/st_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/aTILEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aTILLastName">
+
+            <EditText
+                android:id="@+id/st_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DOB(DD/MM/YYYY)"
+                android:inputType="date"
+                android:maxLength="10" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/ph"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aTILEmail">
+
+            <EditText
+                android:id="@+id/stph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:maxLength="10" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Course Details:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ph" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Stream:"
+            android:textColor="@color/secondprimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <RadioGroup
+            android:id="@+id/sgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            >
+            <RadioButton
+                android:id="@+id/st_art"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Arts"
+                android:textSize="15sp"
+                android:checked="true"
+                android:textColor="@color/black"
+                />
+            <RadioButton
+                android:id="@+id/st_com"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Commerce"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                />
+            <RadioButton
+                android:id="@+id/st_sci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Science"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Course/Faulty:"
+            android:textColor="@color/secondprimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sgroup" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textView03"
+            >
+            <RadioGroup
+                android:id="@+id/cagroup"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <RadioButton
+                    android:id="@+id/ca_ba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Arts (B.A.)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/ca_bfa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Fine Arts (B.F.A.)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/ca_bba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Business Administration (B.B.A.)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/ca_llb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Integrated Law course (B.A + L.L.B.)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/ca_bjm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Journalism and Mass Communication (B.J.M.)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/ca_bfd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Fashion Design (B.F.D.)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/ca_bhm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Hotel Management (B.H.M.)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/ccgroup"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <RadioButton
+                    android:id="@+id/cc_ca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Chartered Accountancy (CA)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/cc_cs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Company Secretary (CS)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/cc_bac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="BCom in Accounting and Commerce"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/cc_bba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Business Administration and Bachelor of Law"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/cc_bms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="BBA/BMS"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/cc_bca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="BCA (IT and Software)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/cc_baf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="BCom Banking and Finance (BAF)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/csgroup"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <RadioButton
+                    android:id="@+id/cs_bfa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Technology (BE/BTech)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/cs_ba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Architecture (BArch)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/cs_bsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Science (BSc)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/cs_bca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Computer Applications (BCA)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/cs_mbbs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Medicine &amp; Bachelor of Surgery (MBBS)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+                <RadioButton
+                    android:id="@+id/cs_bp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bachelor of Pharmacy (BPharma)"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Current Year:"
+            android:textColor="@color/secondprimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl1" />
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/y"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+            <EditText
+                android:id="@+id/st_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Year(FY)"
+                android:inputType="textCapCharacters"
+                />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <TextView
+            android:id="@+id/textView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Fee Details:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/y" />
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/tf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView02">
+
+            <EditText
+                android:id="@+id/st_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Fee (in Rupees)"
+                android:inputType="phone"
+                android:maxLength="10" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/fp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tf">
+
+            <EditText
+                android:id="@+id/st_fp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fee Paid (in Rupees)"
+                android:inputType="phone"
+                android:maxLength="10" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/fpd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fp">
+
+            <EditText
+                android:id="@+id/st_fpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fee Paid Date (DD/MM/YYYY)"
+                android:inputType="date"
+                />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:id="@+id/fr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="16dp"
+            app:borderColor="#5300e8"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fpd">
+
+            <EditText
+                android:id="@+id/st_frem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Remaining fee (if fee paid, enter 00)"
+                android:inputType="phone"
+                android:maxLength="10" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:text="Register"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fr" />
+
+        <ImageView
+            android:id="@+id/cal1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/aTILEmail"
+            app:layout_constraintEnd_toEndOf="@+id/aTILEmail"
+            app:layout_constraintTop_toTopOf="@+id/aTILEmail"
+            app:srcCompat="@drawable/calendar" />
+
+        <ImageView
+            android:id="@+id/cal2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fpd"
+            app:layout_constraintEnd_toEndOf="@+id/fpd"
+            app:layout_constraintTop_toTopOf="@+id/fpd"
+            app:srcCompat="@drawable/calendar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
