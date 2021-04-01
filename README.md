@@ -1,5 +1,13 @@
 # Fee-Management-Sysyem
 
+Built this app using Android SDK, Java and Firebase. It maintains SignUp and Login for Staff membersand only Login for Students. 
+
+Staff enters the Students Information with fee details in database. The students that are added to database can Login using Phone Number and Password provided whileregistering students. 
+
+Staff can update fee details for next payment as per Course Year.
+
+Students can Login and see their information with fee details in home page. Students can change theirpassword to new password.
+
 
 # Screenshots
 
